@@ -47,8 +47,8 @@ Gradle dependency:
 compile 'com.github.siyamed:android-shape-imageview:0.9.+@aar'
 ```
 
-###Shader Based ImageView's
-####BubbleImageView
+### Shader Based ImageView's
+#### BubbleImageView
 ![Android Bubble ImageView](images/small-bubble.png)
 ```XML
 <com.github.siyamed.shapeimageview.BubbleImageView
@@ -64,7 +64,7 @@ Attributes:
 * `siArrowPosition` where to point the arrow, currently `left|right`
 * `siSquare` set width and height to the minimum of the given values `true|false`
 
-####RoundedImageView
+#### RoundedImageView
 ![Android Rounded Rectangle ImageView](images/small-rounded.png)
 ```XML
 <com.github.siyamed.shapeimageview.RoundedImageView
@@ -84,7 +84,7 @@ Attributes:
 * `siRadius` corner radius in dp
 * `siSquare` set width and height to the minimum of the given values `true|false`
 
-####CircularImageView
+#### CircularImageView
 ![Android Circular ImageView](images/small-circle.png)
 ```XML
 <com.github.siyamed.shapeimageview.CircularImageView
@@ -100,7 +100,8 @@ Attributes:
 * `siBorderWidth` border width in dp
 * `siBorderAlpha` alpha value of the border between 0.0-1.0
 
-####ShapeImageView
+#### ShapeImageView
+
 This view has the capability to process a provided SVG file (for a limited set of SVG elements), build a 
 [Path][Path] object and draw it on the shader. The library includes SVG files defining a set of basic shapes and 
 ShapeImageView subclasses using those files. You can use whatever SVG you want to have a wonderful 
@@ -142,7 +143,7 @@ SVG elements that are supported are: [rectangle][svg_rectangle], [circle][svg_ci
 
 The system converts an SVG file into a Path. For each element including the parent element `<svg>` a new Path is created, and all the children Path's are [added][Path.addPath] to their parent path. 
 
-###Bitmap Mask Based ImageViews 
+### Bitmap Mask Based ImageViews 
 
 This view uses extra bitmaps for bitmap masks. Therefore it would be good to use them for very custom shapes, 
 possibly not in a recycling view. 
